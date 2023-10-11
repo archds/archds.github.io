@@ -1,6 +1,7 @@
 use crate::components;
-use crate::data::get_contacts;
+use crate::data::{get_contacts, get_skill_info, ABOUT_ME};
 use crate::layout;
+use crate::types::AboutItem;
 
 use yew::prelude::*;
 
@@ -10,7 +11,13 @@ pub fn app() -> Html {
         <main>
             <layout::Container>
                 <components::Contacts contacts={get_contacts()} />
-                <components::About/>
+                <components::About items={ABOUT_ME.into_iter().map(|(head, text)| {
+                    AboutItem {
+                        title: head.to_string(),
+                        text: text.to_string(),
+                    }
+                }).collect::<Vec<_>>()} />
+                <components::Languages languages={get_skill_info()} />
             </layout::Container>
         </main>
     }

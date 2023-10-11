@@ -17,15 +17,23 @@ pub fn Container(props: &ContainerProps) -> Html {
 pub struct ColumnProps {
     pub children: Children,
     pub size: Option<String>,
+    pub class: Option<String>,
 }
 
 #[function_component]
 pub fn Column(props: &ColumnProps) -> Html {
-    let ColumnProps { children, size } = props;
-    let col_class = size.clone().map(|s| format!("col-{}", s));
+    let ColumnProps {
+        children,
+        size,
+        class,
+    } = props;
+    let col_class = size
+        .clone()
+        .map(|s| format!("col-{}", s))
+        .unwrap_or("col".to_string());
 
     html! {
-        <div class={classes!(col_class)}>{ for children.iter() }</div>
+        <div class={classes!(col_class, class)}>{ for children.iter() }</div>
     }
 }
 
