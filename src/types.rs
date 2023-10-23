@@ -45,3 +45,12 @@ pub struct Language {
     pub skills: Vec<Skill>,
     pub description: Vec<String>,
 }
+
+#[derive(PartialEq, Properties, Clone)]
+pub struct Experience {
+    pub employer: String,
+    pub from_age: String,
+    pub to_age: String,
+    pub job_duties: String,
+    pub skills: Vec<String>,
+}

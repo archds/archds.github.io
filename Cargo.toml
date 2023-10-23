@@ -10,4 +10,5 @@ keywords = ["yew", "trunk"]
 categories = ["gui", "wasm", "web-programming"]
 
 [dependencies]
+serde = { version = "1.0.189", features = ["derive"] }
 yew = { version="0.20.0", features=["csr"] }

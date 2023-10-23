@@ -1,5 +1,5 @@
 use crate::components;
-use crate::data::{get_contacts, get_skill_info, ABOUT_ME};
+use crate::data::{get_contacts, get_skill_info, ABOUT_ME, get_experiences};
 use crate::layout;
 use crate::types::AboutItem;
 
@@ -18,6 +18,7 @@ pub fn app() -> Html {
                     }
                 }).collect::<Vec<_>>()} />
                 <components::Languages languages={get_skill_info()} />
+                <components::ExperiencesSection experiences={get_experiences()} />
             </layout::Container>
         </main>
     }

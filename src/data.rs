@@ -1,4 +1,4 @@
-use crate::types::{Contact, Language, Link, LinkType, Skill, TextValue};
+use crate::types::{Contact, Experience, Language, Link, LinkType, Skill, TextValue};
 
 pub const ABOUT_ME: [(&str, &str); 3] = [
     (
@@ -142,4 +142,22 @@ pub fn get_skill_info() -> Vec<Language> {
             ]
         },
     ];
+}
+
+pub fn get_experiences() -> Vec<Experience> {
+    return vec![Experience {
+        employer: "Someone".to_string(),
+        from_age: "2020".to_string(),
+        to_age: "2021".to_string(),
+        job_duties: "Design, develop, and maintain server-side applications and infrastructure.
+        Keep up-to-date with industry trends and emerging technologies to recommend and implement improvements.
+        Optimize application performance, troubleshoot and debug issues, and implement solutions.
+        Implement and maintain RESTful APIs for data exchange with front-end applications and third-party services.".to_string(),
+        skills: vec![
+            "PHP".to_string(),
+            "Python".to_string(),
+            "Test".to_string(),
+            "Docker".to_string(),
+        ]
+    }];
 }
