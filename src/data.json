@@ -1,0 +1,179 @@
+{
+  "about": [
+    {
+      "title": "Backend Development",
+      "text": "I specialize in backend development, where my passion for building robust and efficient software solutions comes to life. I thrive in collaborative environments, where I can contribute my technical expertise and work collectively to achieve project goals. My enthusiasm for learning and adapting to new technologies enables me to quickly grasp unfamiliar concepts and stay up-to-date in the ever-evolving field of software development."
+    },
+    {
+      "title": "Professional Experience",
+      "text": "Throughout my career, I've had the privilege of working on a variety of projects, from optimizing, including those involving Event Sourcing and Domain-Driven Design (DDD). I take pride in my ability to architect well-structured and efficient backend systems that meet the needs of both clients and end-users."
+    },
+    {
+      "title": "Outside of Work",
+      "text": "In my free time, I lead an active lifestyle, participating in various sport activity. Engaging in physical activities not only keeps me fit but also provides a healthy outlet for stress and creativity. Additionally, I enjoy gaming as a way to unwind and explore virtual worlds, fostering problem-solving skills and strategic thinking."
+    }
+  ],
+  "contacts": [
+    {
+      "name": "GitHub",
+      "link": "https://github.com/archds",
+      "type": null
+    },
+    {
+      "name": "Email",
+      "link": "dsalekseev@gmail.com",
+      "type": {
+        "linkType": "Email"
+      }
+    }
+  ],
+  "skills": [
+    {
+      "logo": "https://icongr.am/devicon/python-original.svg?size=32&color=676767",
+      "title": "Python",
+      "skills": [
+        {
+          "title": "Tools",
+          "items": [
+            {
+              "textType": "Link",
+              "content": {
+                "text": "Django",
+                "url": "https://www.djangoproject.com/",
+                "type": null
+              }
+            },
+            {
+              "textType": "Link",
+              "content": {
+                "text": "FastAPI",
+                "url": "https://fastapi.tiangolo.com/",
+                "type": null
+              }
+            },
+            {
+              "textType": "Link",
+              "content": {
+                "text": "Pydantic",
+                "url": "https://docs.pydantic.dev/",
+                "type": null
+              }
+            }
+          ]
+        },
+        {
+          "title": "Projects",
+          "items": [
+            {
+              "textType": "Link",
+              "content": {
+                "text": "Pyferret",
+                "url": "https://github.com/archds/pyferret",
+                "type": null
+              }
+            }
+          ]
+        }
+      ],
+      "description": [
+        "Python is my primary developing tool. I like Python because it's so easy to read and write. Its clean  and simple syntax makes coding a breeze, and I find it great for variety of tasks.  The huge and active Python community means I'm never short  on resources and help when I need it. Python is very flexible and with good philosophy you can make reliable tools and products"
+      ]
+    },
+    {
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Rust_programming_language_black_logo.svg",
+      "title": "Rust",
+      "skills": [
+        {
+          "title": "Tools",
+          "items": [
+            {
+              "textType": "Text",
+              "content": "Serde"
+            },
+            {
+              "textType": "Link",
+              "content": {
+                "text": "Yew",
+                "url": "https://yew.rs/",
+                "type": null
+              }
+            }
+          ]
+        },
+        {
+          "title": "Projects",
+          "items": [
+            {
+              "textType": "Link",
+              "content": {
+                "text": "Chickapi",
+                "url": "https://github.com/archds/chikapi",
+                "type": null
+              }
+            }
+          ]
+        }
+      ],
+      "description": [
+        "I really like Rust for several reasons. First and foremost, it's a language  that prioritizes safety and performance. Its strict compiler catches many programming errors at compile time, which saves me from dealing with hard-to-debug runtime issues. At last, but not least, I know Rust as parent for many high-performance and reliable developing tools, such as Pydantic and Ruff, and that gives me inspiration to work with."
+      ]
+    },
+    {
+      "logo": "https://icongr.am/jam/wrench-f.svg?size=36&color=676767",
+      "title": "Other",
+      "skills": [
+        {
+          "title": "CI/CD",
+          "items": [
+            {
+              "textType": "Text",
+              "content": "Docker"
+            },
+            {
+              "textType": "Text",
+              "content": "Docker Compose"
+            },
+            {
+              "textType": "Text",
+              "content": "GitHub Actions"
+            }
+          ]
+        },
+        {
+          "title": "Task management/Work",
+          "items": [
+            {
+              "textType": "Text",
+              "content": "YouTrack"
+            },
+            {
+              "textType": "Text",
+              "content": "VSCode"
+            },
+            {
+              "textType": "Text",
+              "content": "Agile"
+            }
+          ]
+        }
+      ],
+      "description": [
+        "Despite as I like programming, I see how important other things for building a robust systems. Some tools are industry standard and not giving them enough attention would be a mistake. Also social interaction and task-management tools is important too, so I prefer not giving that part of work aside."
+      ]
+    }
+  ],
+  "experiences": [
+    {
+      "employer": "Someone",
+      "from_age": "2020",
+      "to_age": "2021",
+      "job_duties": "Design, develop, and maintain server-side applications and infrastructure. Keep up-to-date with industry trends and emerging technologies to recommend and implement improvements. Optimize application performance, troubleshoot and debug issues, and implement solutions. Implement and maintain RESTful APIs for data exchange with front-end applications and third-party services.",
+      "skills": [
+        "PHP",
+        "Python",
+        "Test",
+        "Docker"
+      ]
+    }
+  ]
+}

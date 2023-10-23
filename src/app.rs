@@ -1,24 +1,20 @@
 use crate::components;
-use crate::data::{get_contacts, get_skill_info, ABOUT_ME, get_experiences};
+use crate::data::get_data;
 use crate::layout;
-use crate::types::AboutItem;
 
 use yew::prelude::*;
 
 #[function_component(App)]
 pub fn app() -> Html {
+    let data = get_data().expect("Failed to load application data!");
+
     html! {
         <main>
             <layout::Container>
-                <components::Contacts contacts={get_contacts()} />
-                <components::About items={ABOUT_ME.into_iter().map(|(head, text)| {
-                    AboutItem {
-                        title: head.to_string(),
-                        text: text.to_string(),
-                    }
-                }).collect::<Vec<_>>()} />
-                <components::Languages languages={get_skill_info()} />
-                <components::ExperiencesSection experiences={get_experiences()} />
+                <components::Contacts contacts={data.contacts} />
+                <components::About items={data.about} />
+                <components::Languages languages={data.skills} />
+                <components::ExperiencesSection experiences={data.experiences} />
             </layout::Container>
         </main>
     }

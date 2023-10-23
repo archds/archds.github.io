@@ -1,5 +1,5 @@
 use crate::types::Experience;
-use yew::{function_component, html, Html, Properties, classes};
+use yew::{classes, function_component, html, Html, Properties};
 
 #[derive(PartialEq, Properties)]
 pub struct ExperiencesProps {
