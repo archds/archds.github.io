@@ -1,6 +1,6 @@
 use yew::{classes, function_component, html, AttrValue, Html, Properties};
 
-use crate::layout::{Column, Row, ColScreenSize};
+use crate::layout::{ColScreenSize, Column, Row};
 use crate::types::{Language, TextValue};
 
 #[derive(PartialEq, Properties)]
@@ -20,7 +20,11 @@ pub fn LanguageInfo(props: &LanguageInfoProps) -> Html {
                 .iter()
                 .map(|item| match item {
                     TextValue::Link(link) => {
-                        format!("<a target=\"_blank\" href={}>{}</a>", link.url.clone(), link.text.clone())
+                        format!(
+                            "<a target=\"_blank\" href={}>{}</a>",
+                            link.url.clone(),
+                            link.text.clone()
+                        )
                     }
                     TextValue::Text(text) => format!("<span>{}</span>", text),
                 })

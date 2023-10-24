@@ -15,6 +15,7 @@ pub fn app() -> Html {
                 <components::About items={data.about} />
                 <components::Languages languages={data.skills} />
                 <components::ExperiencesSection experiences={data.experiences} />
+                <components::MadeWith />
             </layout::Container>
         </main>
     }
