@@ -17,14 +17,12 @@
     {
       "name": "GitHub",
       "link": "https://github.com/archds",
-      "type": null
+      "type": "Other"
     },
     {
       "name": "Email",
       "link": "dsalekseev@gmail.com",
-      "type": {
-        "linkType": "Email"
-      }
+      "type": "Email"
     }
   ],
   "skills": [
@@ -39,24 +37,105 @@
               "textType": "Link",
               "content": {
                 "text": "Django",
-                "url": "https://www.djangoproject.com/",
-                "type": null
+                "url": "https://www.djangoproject.com/"
               }
             },
             {
               "textType": "Link",
               "content": {
                 "text": "FastAPI",
-                "url": "https://fastapi.tiangolo.com/",
-                "type": null
+                "url": "https://fastapi.tiangolo.com/"
               }
             },
             {
               "textType": "Link",
               "content": {
                 "text": "Pydantic",
-                "url": "https://docs.pydantic.dev/",
-                "type": null
+                "url": "https://docs.pydantic.dev/"
+              }
+            },
+            {
+              "textType": "Link",
+              "content": {
+                "text": "pandas",
+                "url": "https://pandas.pydata.org/"
+              }
+            },
+            {
+              "textType": "Link",
+              "content": {
+                "text": "Rich",
+                "url": "https://github.com/Textualize/rich"
+              }
+            },
+            {
+              "textType": "Link",
+              "content": {
+                "text": "Typer",
+                "url": "https://typer.tiangolo.com/"
+              }
+            },
+            {
+              "textType": "Link",
+              "content": {
+                "text": "Dependency Injector",
+                "url": "https://python-dependency-injector.ets-labs.org/"
+              }
+            },
+            {
+              "textType": "Link",
+              "content": {
+                "text": "pytest",
+                "url": "https://docs.pytest.org/"
+              }
+            },
+            {
+              "textType": "Link",
+              "content": {
+                "text": "mypy",
+                "url": "https://mypy.readthedocs.io/"
+              }
+            },
+            {
+              "textType": "Link",
+              "content": {
+                "text": "Pyright",
+                "url": "https://github.com/microsoft/pyright"
+              }
+            },
+            {
+              "textType": "Link",
+              "content": {
+                "text": "Ruff",
+                "url": "https://github.com/astral-sh/ruff"
+              }
+            },
+            {
+              "textType": "Link",
+              "content": {
+                "text": "Pika",
+                "url": "https://github.com/pika/pika"
+              }
+            },
+            {
+              "textType": "Link",
+              "content": {
+                "text": "Ariadne",
+                "url": "https://ariadnegraphql.org/"
+              }
+            },
+            {
+              "textType": "Link",
+              "content": {
+                "text": "Celery",
+                "url": "https://docs.celeryq.dev/"
+              }
+            },
+            {
+              "textType": "Link",
+              "content": {
+                "text": "openpyxl",
+                "url": "https://openpyxl.readthedocs.io/"
               }
             }
           ]
@@ -68,8 +147,7 @@
               "textType": "Link",
               "content": {
                 "text": "Pyferret",
-                "url": "https://github.com/archds/pyferret",
-                "type": null
+                "url": "https://github.com/archds/pyferret"
               }
             }
           ]
@@ -87,15 +165,31 @@
           "title": "Tools",
           "items": [
             {
-              "textType": "Text",
-              "content": "Serde"
+              "textType": "Link",
+              "content": {
+                "text": "Serde",
+                "url": "https://serde.rs/"
+              }
             },
             {
               "textType": "Link",
               "content": {
                 "text": "Yew",
-                "url": "https://yew.rs/",
-                "type": null
+                "url": "https://yew.rs/"
+              }
+            },
+            {
+              "textType": "Link",
+              "content": {
+                "text": "Rocket",
+                "url": "https://rocket.rs/"
+              }
+            },
+            {
+              "textType": "Link",
+              "content": {
+                "text": "inquire",
+                "url": "https://github.com/mikaelmello/inquire"
               }
             }
           ]
@@ -107,8 +201,7 @@
               "textType": "Link",
               "content": {
                 "text": "Chickapi",
-                "url": "https://github.com/archds/chikapi",
-                "type": null
+                "url": "https://github.com/archds/chikapi"
               }
             }
           ]
@@ -122,6 +215,27 @@
       "logo": "assets/icons/wrench.svg",
       "title": "Other",
       "skills": [
+        {
+          "title": "API/Databases",
+          "items": [
+            {
+              "textType": "Text",
+              "content": "GraphQL"
+            },
+            {
+              "textType": "Text",
+              "content": "RabbitQM"
+            },
+            {
+              "textType": "Text",
+              "content": "Redis"
+            },
+            {
+              "textType": "Text",
+              "content": "PostgreSQL"
+            }
+          ]
+        },
         {
           "title": "CI/CD",
           "items": [
@@ -152,7 +266,28 @@
             },
             {
               "textType": "Text",
+              "content": "Pycharm"
+            },
+            {
+              "textType": "Text",
               "content": "Agile"
+            },
+            {
+              "textType": "Text",
+              "content": "GitHub"
+            }
+          ]
+        },
+        {
+          "title": "Logs/Metrics",
+          "items": [
+            {
+              "textType": "Text",
+              "content": "LogzIO"
+            },
+            {
+              "textType": "Text",
+              "content": "Rollbar"
             }
           ]
         }
