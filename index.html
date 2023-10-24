@@ -15,3 +15,9 @@
     <meta name="theme-color" content="#ffffff">
   </head>
 </html>
+<script>
+    if (window.matchMedia &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.body.classList.add('dark');
+    }
+</script>

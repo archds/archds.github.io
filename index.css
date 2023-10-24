@@ -4,6 +4,14 @@
   --color-grey: #676767;
 }
 
+body.dark {
+  --bg-color: #000;
+  --bg-secondary-color: #131316;
+  --font-color: #f5f5f5;
+  --color-grey: #ccc;
+  --color-darkGrey: #777;
+}
+
 .avatar {
   border-radius: 100%;
   max-width: 200px;
