@@ -1,6 +1,6 @@
 use yew::{classes, function_component, html, AttrValue, Html, Properties};
 
-use crate::layout::{Column, Row};
+use crate::layout::{Column, Row, ColScreenSize};
 use crate::types::{Language, TextValue};
 
 #[derive(PartialEq, Properties)]
@@ -67,9 +67,15 @@ pub fn Languages(props: &LanguagesProps) -> Html {
 
         html! {
             <Row>
-                <Column size={"3"}><LanguageInfo language={lang.clone()} /></Column>
-                <Column class={"is-vertical-align is-horizontal-align"} size={"1"}><div class="vertical-line"></div></Column>
-                <Column class={"skill-description"}>{description_html}</Column>
+                <Column size={"3"} screen={ColScreenSize::Large}>
+                    <LanguageInfo language={lang.clone()} />
+                </Column>
+                <Column class={"is-vertical-align is-horizontal-align"} size={"1"} screen={ColScreenSize::Large}>
+                    <div class="vertical-line hide-xs hide-sm hide-md hide-pr"></div>
+                </Column>
+                <Column class={"skill-description"} size={"8"} screen={ColScreenSize::Large}>
+                    {description_html}
+                </Column>
             </Row>
         }
     }).collect::<Vec<Html>>();

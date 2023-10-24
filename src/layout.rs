@@ -13,11 +13,19 @@ pub fn Container(props: &ContainerProps) -> Html {
     }
 }
 
+#[derive(PartialEq)]
+pub enum ColScreenSize {
+    Medium,
+    Large,
+    Small
+}
+
 #[derive(PartialEq, Properties)]
 pub struct ColumnProps {
     pub children: Children,
     pub size: Option<String>,
     pub class: Option<String>,
+    pub screen: Option<ColScreenSize>
 }
 
 #[function_component]
@@ -26,11 +34,18 @@ pub fn Column(props: &ColumnProps) -> Html {
         children,
         size,
         class,
+        screen
     } = props;
-    let col_class = size
+    let mut col_class = size
         .clone()
         .map(|s| format!("col-{}", s))
         .unwrap_or("col".to_string());
+
+    col_class = screen.as_ref().map(|s| match s {
+        ColScreenSize::Large => format!("{}-{}", col_class, "lg"),
+        ColScreenSize::Medium => format!("{}-{}", col_class, "md"),
+        ColScreenSize::Small => format!("{}", col_class),
+    }).unwrap_or(col_class);
 
     html! {
         <div class={classes!(col_class, class)}>{ for children.iter() }</div>
