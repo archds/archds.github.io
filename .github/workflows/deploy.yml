@@ -24,7 +24,7 @@ jobs:
         run: |
           wget -qO- https://github.com/thedodd/trunk/releases/download/$TRUNK_VER/trunk-x86_64-unknown-linux-gnu.tar.gz | tar -xzf-
           npm ci
-          trunk build --release
+          ./trunk build --release
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
