@@ -6,6 +6,9 @@ on:
 permissions:
   contents: write
 
+env:
+  TRUNK_VER: "v0.17.5"
+
 jobs:
   build-and-deploy:
     concurrency: ci-${{ github.ref }}
@@ -19,7 +22,7 @@ jobs:
 
       - name: Install and Build 🔧
         run: |
-          cargo install --locked trunk
+          wget -qO- https://github.com/thedodd/trunk/releases/download/$TRUNK_VER/trunk-x86_64-unknown-linux-gnu.tar.gz | tar -xzf-
           npm ci
           trunk build --release
 
