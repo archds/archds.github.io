@@ -5,7 +5,6 @@ use yew::Properties;
 pub struct Link {
     pub text: String,
     pub url: String,
-    pub _type: Option<LinkType>,
 }
 
 #[derive(PartialEq, Clone, Serialize, Deserialize, Debug)]
@@ -15,19 +14,18 @@ pub enum TextValue {
     Link(Link),
 }
 
-#[derive(PartialEq, Clone, Serialize, Deserialize, Debug)]
-#[serde(tag = "linkType", content = "content")]
-pub enum LinkType {
-    Email,
-    Phone,
-}
-
 #[derive(PartialEq, Properties, Clone, Serialize, Deserialize, Debug)]
-pub struct Contact {
+pub struct ContactInfo {
     pub name: String,
     pub link: String,
-    #[serde(rename = "name")]
-    pub _type: Option<LinkType>,
+}
+
+#[derive(PartialEq, Clone, Serialize, Deserialize, Debug)]
+#[serde(tag = "type")]
+pub enum Contact {
+    Email(ContactInfo),
+    Phone(ContactInfo),
+    Other(ContactInfo),
 }
 
 #[derive(PartialEq, Properties, Clone, Serialize, Deserialize, Debug)]

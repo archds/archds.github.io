@@ -17,14 +17,12 @@
     {
       "name": "GitHub",
       "link": "https://github.com/archds",
-      "type": null
+      "type": "Other"
     },
     {
       "name": "Email",
       "link": "dsalekseev@gmail.com",
-      "type": {
-        "linkType": "Email"
-      }
+      "type": "Email"
     }
   ],
   "skills": [

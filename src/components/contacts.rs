@@ -1,16 +1,6 @@
 use crate::layout::{Column, Row};
-use crate::types::{Contact, LinkType};
+use crate::types::Contact;
 use yew::{classes, function_component, html, Html, Properties};
-
-fn fmt_href(contact: &Contact) -> String {
-    match &contact._type {
-        Some(_type) => match _type {
-            LinkType::Email => format!("mailto: {}", contact.link),
-            LinkType::Phone => format!("tel: {}", contact.link),
-        },
-        None => contact.link.to_owned(),
-    }
-}
 
 #[derive(PartialEq, Properties)]
 pub struct ContactsProps {
@@ -23,14 +13,28 @@ pub fn Contacts(props: &ContactsProps) -> Html {
 
     let contacts_html = contacts
         .into_iter()
-        .map(|contact| {
-            html! {
+        .map(|contact| match contact {
+            Contact::Email(ct) => html! {
             <p>
-                <b>{&contact.name}</b>
+                <b>{&ct.name}</b>
                 {" - "}
-                <a href={fmt_href(contact)}>{&contact.link}</a>
+                <a target={"blank"} href={format!("mailto: {}", ct.link)}>{&ct.link}</a>
             </p>
-            }
+            },
+            Contact::Phone(ct) => html! {
+            <p>
+                <b>{&ct.name}</b>
+                {" - "}
+                <a target={"blank"} href={format!("tel: {}", ct.link)}>{&ct.link}</a>
+            </p>
+            },
+            Contact::Other(ct) => html! {
+            <p>
+                <b>{&ct.name}</b>
+                {" - "}
+                <a target={"blank"} href={format!("{}", ct.link)}>{&ct.link}</a>
+            </p>
+            },
         })
         .collect::<Html>();
 
