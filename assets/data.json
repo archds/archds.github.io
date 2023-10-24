@@ -162,18 +162,5 @@
       ]
     }
   ],
-  "experiences": [
-    {
-      "employer": "Someone",
-      "from_age": "2020",
-      "to_age": "2021",
-      "job_duties": "Design, develop, and maintain server-side applications and infrastructure. Keep up-to-date with industry trends and emerging technologies to recommend and implement improvements. Optimize application performance, troubleshoot and debug issues, and implement solutions. Implement and maintain RESTful APIs for data exchange with front-end applications and third-party services.",
-      "skills": [
-        "PHP",
-        "Python",
-        "Test",
-        "Docker"
-      ]
-    }
-  ]
+  "experiences": []
 }
