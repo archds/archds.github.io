@@ -58,12 +58,13 @@ pub fn Column(props: &ColumnProps) -> Html {
 #[derive(PartialEq, Properties)]
 pub struct RowProps {
     pub children: Children,
+    pub class: Option<String>,
 }
 
 #[function_component]
 pub fn Row(props: &RowProps) -> Html {
-    let RowProps { children } = props;
+    let RowProps { children, class } = props;
     html! {
-        <div class={classes!("row")}>{ for children.iter() }</div>
+        <div class={classes!("row", class)}>{ for children.iter() }</div>
     }
 }
