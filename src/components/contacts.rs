@@ -38,7 +38,7 @@ pub fn Contacts(props: &ContactsProps) -> Html {
         <Row>
             <Column size={"4"}>
                 <div class="is-horizontal-align">
-                    <img class={classes!("avatar")} src="assets/200x200.svg" alt="avatar"/>
+                    <img class={classes!("avatar")} src="assets/avatar.jpg" alt="avatar"/>
                 </div>
             </Column>
             <Column size={"8"}>
