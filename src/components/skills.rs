@@ -20,7 +20,7 @@ pub fn LanguageInfo(props: &LanguageInfoProps) -> Html {
                 .iter()
                 .map(|item| match item {
                     TextValue::Link(link) => {
-                        format!("<a href={}>{}</a>", link.url.clone(), link.text.clone())
+                        format!("<a target=\"_blank\" href={}>{}</a>", link.url.clone(), link.text.clone())
                     }
                     TextValue::Text(text) => format!("<span>{}</span>", text),
                 })
@@ -69,7 +69,7 @@ pub fn Languages(props: &LanguagesProps) -> Html {
             <Row>
                 <Column size={"3"}><LanguageInfo language={lang.clone()} /></Column>
                 <Column class={"is-vertical-align is-horizontal-align"} size={"1"}><div class="vertical-line"></div></Column>
-                <Column class={"is-vertical-align"}>{description_html}</Column>
+                <Column class={"skill-description"}>{description_html}</Column>
             </Row>
         }
     }).collect::<Vec<Html>>();

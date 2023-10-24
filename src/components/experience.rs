@@ -25,7 +25,7 @@ pub fn ExperiencesSection(props: &ExperiencesProps) -> Html {
         .collect::<Html>();
 
     html! {
-        <section>
+        <section class={classes!("page-break")}>
             <h1>{"Experience"}</h1>
             {experiences_html}
         </section>

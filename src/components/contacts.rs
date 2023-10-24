@@ -18,21 +18,21 @@ pub fn Contacts(props: &ContactsProps) -> Html {
             <p>
                 <b>{&ct.name}</b>
                 {" - "}
-                <a target={"blank"} href={format!("mailto: {}", ct.link)}>{&ct.link}</a>
+                <a target={"_blank"} href={format!("mailto: {}", ct.link)}>{&ct.link}</a>
             </p>
             },
             Contact::Phone(ct) => html! {
             <p>
                 <b>{&ct.name}</b>
                 {" - "}
-                <a target={"blank"} href={format!("tel: {}", ct.link)}>{&ct.link}</a>
+                <a target={"_blank"} href={format!("tel: {}", ct.link)}>{&ct.link}</a>
             </p>
             },
             Contact::Other(ct) => html! {
             <p>
                 <b>{&ct.name}</b>
                 {" - "}
-                <a target={"blank"} href={format!("{}", ct.link)}>{&ct.link}</a>
+                <a target={"_blank"} href={format!("{}", ct.link)}>{&ct.link}</a>
             </p>
             },
         })

@@ -42,3 +42,8 @@ main {
   background-color: var(--color-lightGrey);
 }
 
+.skill-description {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
