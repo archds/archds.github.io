@@ -2,7 +2,7 @@
     <meta charset="utf-8">
     <title>Denis Alekseev</title>
     <link rel="stylesheet" href="/chota.min-27297ce231ae44e1.css">
-    <link rel="stylesheet" href="/index-f7b731e3f01bc6a0.css">
+    <link rel="stylesheet" href="/index-238426a0579331b1.css">
     
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/faviconfavicon-32x32.png">
@@ -15,4 +15,9 @@
 <link rel="preload" href="/trunk-template-fea12589402f73d3_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
 <link rel="modulepreload" href="/trunk-template-fea12589402f73d3.js"></head>
 <body>
-<script type="module">import init from '/trunk-template-fea12589402f73d3.js';init('/trunk-template-fea12589402f73d3_bg.wasm');</script></body></html>
+<script>
+    if (window.matchMedia &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.body.classList.add('dark');
+    }
+</script><script type="module">import init from '/trunk-template-fea12589402f73d3.js';init('/trunk-template-fea12589402f73d3_bg.wasm');</script></body></html>
