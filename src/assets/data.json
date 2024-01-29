@@ -338,6 +338,20 @@
         "Rollbar",
         "LogzIO"
       ]
+    },
+    {
+      "employer": "Data-matrix research",
+      "from_age": "2022",
+      "to_age": "2022",
+      "job_title": "Research assistant",
+      "job_duties": "Development of a tool designed for real-time detection and quality assurance on conveyor systems in a production environment. The primary focus of my work revolves around implementing data-matrix detection using Facebook's Detectron technology. I engage in weekly meetings where I provide detailed reports on the progress of our project. These meetings serve as a platform to discuss challenges, brainstorm solutions, and ensure that our work aligns with project goals and timelines.",
+      "tools": [
+        "Pillow",
+        "OpenCV",
+        "numpy",
+        "tensorflow",
+        "Detectron"
+      ]
     }
   ]
 }

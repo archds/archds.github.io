@@ -18,7 +18,7 @@ pub fn ExperiencesSection(props: &ExperiencesProps) -> Html {
             html! {
                 <div>
                     <Row>
-                        <Column><h3>{format!("{} {}-{}", exp.employer, exp.from_age, exp.to_age)}</h3></Column>
+                        <Column><h3>{format!("{}. {}-{}", exp.employer, exp.from_age, exp.to_age)}</h3></Column>
                         <Column class={"is-right"}><h4>{format!("{}", exp.job_title)}</h4></Column>
                     </Row>
                     <p>{"Tools: "}<span class={classes!("text-grey")}>{tools_html}</span></p>
