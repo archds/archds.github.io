@@ -1,6 +1,6 @@
 use crate::layout::{Column, Row};
 use crate::types::Experience;
-use yew::{classes, function_component, html, Html, Properties};
+use yew::{classes, function_component, html, AttrValue, Html, Properties};
 
 #[derive(PartialEq, Properties)]
 pub struct ExperiencesProps {
@@ -14,6 +14,7 @@ pub fn ExperiencesSection(props: &ExperiencesProps) -> Html {
         .into_iter()
         .map(|exp| {
             let tools_html = exp.tools.join(", ");
+            let job_duties_html = exp.job_duties.clone().into_iter().map(|duty| format!("<p>{duty}</p>")).collect::<String>();
 
             html! {
                 <div>
@@ -22,7 +23,7 @@ pub fn ExperiencesSection(props: &ExperiencesProps) -> Html {
                         <Column class={"is-right"}><h4>{format!("{}", exp.job_title)}</h4></Column>
                     </Row>
                     <p>{"Tools: "}<span class={classes!("text-grey")}>{tools_html}</span></p>
-                    <p>{format!("{}", exp.job_duties)}</p>
+                    {Html::from_html_unchecked(AttrValue::from(job_duties_html))}
                 </div>
             }
         })

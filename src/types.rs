@@ -53,7 +53,7 @@ pub struct Experience {
     pub from_age: String,
     pub to_age: String,
     pub job_title: String,
-    pub job_duties: String,
+    pub job_duties: Vec<String>,
     pub tools: Vec<String>,
 }
 
