@@ -191,8 +191,8 @@ skills:
 
 experiences:
   - employer: Ferrocom
-    from_age: "2020"
-    to_age: "2021"
+    from_age: "November 2020"
+    to_age: "February 2021"
     job_title: Assistant systems administrator
     job_duties:
       - Managing diverse responsibilities crucial to organizational efficiency.
@@ -204,8 +204,8 @@ experiences:
     tools:
       - Microsoft Deployment Toolkit, Windows Deployment Services, Hyper-V, PXE, Python.
   - employer: Edison Studio
-    from_age: "2021"
-    to_age: "2021"
+    from_age: "March 2021"
+    to_age: "August 2021"
     job_title: Web-developer
     job_duties:
       - Creating dynamic and interactive web solutions, using PHP to develop robust and
@@ -222,8 +222,8 @@ experiences:
       - CSS
       - FTP
   - employer: Tayga.city
-    from_age: "2021"
-    to_age: "2022"
+    from_age: "August 2021"
+    to_age: "February 2022"
     job_title: Backend-developer
     job_duties:
       - Supporting an established project focused on creating a web service for buying
@@ -241,8 +241,8 @@ experiences:
       - Rollbar
       - LogzIO
   - employer: Data-matrix research
-    from_age: "2022"
-    to_age: "2022"
+    from_age: "February 2022"
+    to_age: "May 2022"
     job_title: Research assistant
     job_duties:
       - Development of a tool designed for real-time detection and quality assurance on
@@ -258,7 +258,7 @@ experiences:
       - tensorflow
       - Detectron
   - employer: Drum School
-    from_age: "2022"
+    from_age: "May 2022"
     to_age: now
     job_title: Lead backend-developer
     job_duties:
