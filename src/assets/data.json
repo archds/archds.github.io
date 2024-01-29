@@ -224,7 +224,7 @@
             },
             {
               "textType": "Text",
-              "content": "RabbitQM"
+              "content": "RabbitMQ"
             },
             {
               "textType": "Text",
@@ -297,5 +297,47 @@
       ]
     }
   ],
-  "experiences": []
+  "experiences": [
+    {
+      "employer": "Ferrocom",
+      "from_age": "2020",
+      "to_age": "2021",
+      "job_title": "Assistant systems administrator",
+      "job_duties": "Managing diverse responsibilities crucial to organizational efficiency. This includes providing robust support for the PC network, scripting for data collection and task automation, and establishing automation of deployment new Windows workspaces for employees. Additionally, I am playing a key role in hardware and software technical support, resolving issues promptly and ensuring seamless operations.",
+      "tools": [
+        "Microsoft Deployment Toolkit, Windows Deployment Services, Hyper-V, PXE, Python."
+      ]
+    },
+    {
+      "employer": "Edison Studio",
+      "from_age": "2021",
+      "to_age": "2021",
+      "job_title": "Web-developer",
+      "job_duties": "Creating dynamic and interactive web solutions, using PHP to develop robust and scalable back-end functionalities. I am deeply involved in the entire development life cycle, collaborating with cross-functional teams. The majority of my projects revolve around E-Commerce. This experience is not only enhancing my PHP development skills but also deepening my understanding of the specific intricacies associated with E-Commerce web development.",
+      "tools": [
+        "PHP",
+        "OpenCart",
+        "Python",
+        "HTML",
+        "CSS",
+        "FTP"
+      ]
+    },
+    {
+      "employer": "Tayga.city",
+      "from_age": "2021",
+      "to_age": "2022",
+      "job_title": "Backend-developer",
+      "job_duties": "Supporting an established project focused on creating a web service for buying and renting real estate. Contributing to the codebase, ensuring adherence to coding standards and architectural guidelines. My responsibilities include reviewing pull requests, actively participating in daily meetings, and presenting updates on project progress. Member of a books club within the team.",
+      "tools": [
+        "Django",
+        "Celery",
+        "Redis",
+        "GraphQL/Ariadne",
+        "Pydantic",
+        "Rollbar",
+        "LogzIO"
+      ]
+    }
+  ]
 }

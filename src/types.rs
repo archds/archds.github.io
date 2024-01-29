@@ -52,8 +52,9 @@ pub struct Experience {
     pub employer: String,
     pub from_age: String,
     pub to_age: String,
+    pub job_title: String,
     pub job_duties: String,
-    pub skills: Vec<String>,
+    pub tools: Vec<String>,
 }
 
 #[derive(PartialEq, Properties, Clone, Serialize, Deserialize, Debug)]

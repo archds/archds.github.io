@@ -1,3 +1,4 @@
+use crate::layout::{Column, Row};
 use crate::types::Experience;
 use yew::{classes, function_component, html, Html, Properties};
 
@@ -12,12 +13,15 @@ pub fn ExperiencesSection(props: &ExperiencesProps) -> Html {
     let experiences_html = experiences
         .into_iter()
         .map(|exp| {
-            let skills_html = exp.skills.join(", ");
+            let tools_html = exp.tools.join(", ");
 
             html! {
                 <div>
-                    <h3>{format!("{}. {}-{}.", exp.employer, exp.from_age, exp.to_age)}</h3>
-                    <p>{"Tools: "}<span class={classes!("text-grey")}>{skills_html}</span></p>
+                    <Row>
+                        <Column><h3>{format!("{} {}-{}", exp.employer, exp.from_age, exp.to_age)}</h3></Column>
+                        <Column class={"is-right"}><h4>{format!("{}", exp.job_title)}</h4></Column>
+                    </Row>
+                    <p>{"Tools: "}<span class={classes!("text-grey")}>{tools_html}</span></p>
                     <p>{format!("{}", exp.job_duties)}</p>
                 </div>
             }
