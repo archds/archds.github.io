@@ -335,6 +335,7 @@
         "Redis",
         "GraphQL/Ariadne",
         "Pydantic",
+        "Docker and docker compose",
         "Rollbar",
         "LogzIO"
       ]
@@ -351,6 +352,27 @@
         "numpy",
         "tensorflow",
         "Detectron"
+      ]
+    },
+    {
+      "employer": "Drum School",
+      "from_age": "2022",
+      "to_age": "now",
+      "job_title": "Lead backend-developer",
+      "job_duties": "Understand the nuances of the domain. Implemented application architecture using Domain-Driven Design and functional programming approach. Maintaining code rules and best practices. Review pull requests. Design and implement backend-frontend communication using OpenAPI and schema-codegen tools. Maintain and implement QA pipeline and testing framework, actively supporting QA specialist. Participating in daily meetings and Scrum planning sessions. Beyond the technical aspects, I contribute to a book club, facilitating knowledge-sharing sessions. Task delegation, tracking and communications in YouTrack, also writing of part of documentation in there. In summary, my role as the lead backend developer not only technical but also involves strategic decision-making in architectural design, adherence to coding principles, and a commitment to embracing innovative approaches like Domain-Driven Design and functional programming.",
+      "tools": [
+        "Django",
+        "FastAPI",
+        "Pandas",
+        "Pydantic",
+        "Pytest",
+        "Ansible",
+        "Portainer",
+        "GitHub Workflows",
+        "Docker and docker compose",
+        "Pyright",
+        "Black",
+        "Ruff"
       ]
     }
   ]
